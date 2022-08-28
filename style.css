@@ -1,0 +1,56 @@
+
+body {
+    background: rgba(0, 0, 0, 0.884);
+    color: antiquewhite;
+}
+
+.head-title {
+    text-align: center;
+    margin: 40px;
+}
+
+.countries{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.card {
+    background: rgba(0, 0, 0, 0.164);
+    padding: 20px;
+    margin: 30px 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    letter-spacing: 1px;
+}
+
+button {
+    width: 40%;
+    padding: 15px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+@media screen and (max-width:768px) {
+  
+    .countries {
+        
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card{
+        margin: 20px 0;
+        padding: 10px;
+    }
+}
+
+ @media screen and (min-width:769px) and (max-width:1024px) {
+    .countries {
+        
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
